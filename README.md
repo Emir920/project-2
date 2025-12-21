@@ -11,4 +11,4 @@ bu fotğraf 2. projenim görselidir
 
 
                     
-                                                                    POKEMON OLAN HERŞEY İÇİN AYNISI GEÇERLİ
+                                                  POKEMON OLAN HERŞEY İÇİN AYNISI GEÇERLİ
