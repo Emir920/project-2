@@ -1,2 +1,2 @@
-open("rehber.txt", "w")
+open("pokemon.txt", "w")
 
