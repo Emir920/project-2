@@ -1,1 +1,3 @@
-bubasour,grass,100
+bulbasour,grass,100
+pikachu,elctrick,100
+charizard,fire,100
