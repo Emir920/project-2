@@ -1,7 +1,7 @@
 import os
 
 # ----- KİŞİ REHBERİ -----
-DOSYA = "rehber.txt"
+DOSYA = "reehbr.txt"
 
 def oku(dosya=DOSYA):
     if not os.path.exists(dosya):
