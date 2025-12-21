@@ -4,3 +4,4 @@ ekleyi seçerek rehber ekleriz
 sili seçerek rehber sileriz
 lisyeleyi seçerek kaydettiğimiz rehberleri ilk kaydettiğimizden son kaydettimize göre listelenmiş şekilde görürüz
 düzenleyi seçerek ise rehberin adını veya telefon numarasını değiştiririz
+çıkışı seçerek ise çıkarız
