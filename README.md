@@ -7,4 +7,8 @@ bu fotğraf 2. projenim görselidir
 
 3-) kişi listeleyi seçerek kayıtları görürüz
 
-4-) kişi 
+4-) kişi düzelti seçerek adını veya numarasını yanlış yazdığımız kişileri düzeltebiliriz
+
+
+                    
+                                                                    POKEMON OLAN HERŞEY İÇİN AYNISI GEÇERLİ
