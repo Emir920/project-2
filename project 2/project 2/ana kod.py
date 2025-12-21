@@ -2,54 +2,60 @@ import os
 
 DOSYA = "rehber.txt"
 
+def oku():
+    if not os.path.exists(DOSYA):
+        return []
+    with open(DOSYA, "r", encoding="utf-8") as f:
+        return f.readlines()
+
+def yaz(liste):
+    with open(DOSYA, "w", encoding="utf-8") as f:
+        f.writelines(liste)
+
 def kisi_ekle():
     isim = input("İsim: ")
-    telefon = input("Telefon: ")
-
+    tel = input("Telefon: ")
     with open(DOSYA, "a", encoding="utf-8") as f:
-        f.write(isim + "," + telefon + "\n")
-
+        f.write(f"{isim},{tel}\n")
     print("Kişi eklendi.")
 
 def kisi_sil():
-    if not os.path.exists(DOSYA):
-        print("Rehber boş.")
-        return
-
     isim = input("Silinecek isim: ")
-    yeni_liste = []
+    liste = oku()
+    yeni = [s for s in liste if not s.startswith(isim + ",")]
+    yaz(yeni)
+    print("İşlem tamamlandı.")
 
-    with open(DOSYA, "r", encoding="utf-8") as f:
-        for satir in f:
-            if not satir.startswith(isim + ","):
-                yeni_liste.append(satir)
+def kisi_duzelt():
+    isim = input("Düzeltilecek isim: ")
+    liste = oku()
+    yeni = []
 
-    with open(DOSYA, "w", encoding="utf-8") as f:
-        f.writelines(yeni_liste)
+    for s in liste:
+        ad, tel = s.strip().split(",")
+        if ad == isim:
+            ad = input("Yeni isim (boş=aynı): ") or ad
+            tel = input("Yeni tel (boş=aynı): ") or tel
+            yeni.append(f"{ad},{tel}\n")
+        else:
+            yeni.append(s)
 
-    print("Kişi silindi (varsa).")
+    yaz(yeni)
+    print("İşlem tamamlandı.")
 
 def rehberi_listele():
-    if not os.path.exists(DOSYA):
-        print("Rehber boş.")
-        return
-
-    with open(DOSYA, "r", encoding="utf-8") as f:
-        print("\n--- REHBER ---")
-        for satir in f:
-            isim, telefon = satir.strip().split(",")
-            print(isim, ":", telefon)
-
-def menu():
-    print("""
-1 - Kişi Ekle
-2 - Kişi Sil
-3 - Rehberi Listele
-4 - Çıkış
-""")
+    for s in oku():
+        ad, tel = s.strip().split(",")
+        print(ad, ":", tel)
 
 while True:
-    menu()
+    print("""
+1-Ekle
+2-Sil
+3-Listele
+4-Düzelt
+5-Çıkış
+""")
     secim = input("Seçim: ")
 
     if secim == "1":
@@ -59,7 +65,8 @@ while True:
     elif secim == "3":
         rehberi_listele()
     elif secim == "4":
-        print("Çıkılıyor...")
+        kisi_duzelt()
+    elif secim == "5":
         break
     else:
-        print("Hatalı seçim!")
+        print("Hatalı seçim")
