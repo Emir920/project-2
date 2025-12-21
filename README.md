@@ -4,3 +4,7 @@ bu fotğraf 2. projenim görselidir
 1-) kişi ekleyi seçerek kişi ekleriz
 
 2-) kişi sili seçerek kişi sileriz
+
+3-) kişi listeleyi seçerek kayıtları görürüz
+
+4-) kişi 
