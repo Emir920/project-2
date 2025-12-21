@@ -99,15 +99,17 @@ def pokemon_listele():
 # ----- ANA MENÜ -----
 while True:
     print("""
-1- Kişi Ekle
-2- Kişi Sil
-3- Kişi Listele
-4- Kişi Düzelt
-5- Pokemon Ekle
-6- Pokemon Sil
-7- Pokemon Listele
-8- Pokemon Düzelt
-9- Çıkış
+╔═════════════════════╗
+║ 1- Kişi Ekle        ║
+║ 2- Kişi Sil         ║
+║ 3- Kişi Listele     ║
+║ 4- Kişi Düzelt      ║
+║ 5- Pokemon Ekle     ║
+║ 6- Pokemon Sil      ║
+║ 7- Pokemon Listele  ║
+║ 8- Pokemon Düzelt   ║
+║ 9- Çıkış            ║
+╚═════════════════════╝
 """)
     secim = input("Seçim: ")
 
@@ -125,3 +127,8 @@ while True:
         pokemon_sil()
     elif secim == "7":
         pokemon_listele()
+    elif secim == "8":
+        pokemon_duzelt()
+    else:
+        break
+
