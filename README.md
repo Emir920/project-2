@@ -5,4 +5,6 @@ bu görsel 2. projedir
 
 2-) kişi sili seçince birini rehberden silebiriz
 
-3-) 
+3-) kisi listeleye basinca butun kayitlari gostrir
+
+4-) kisi duzeltte adini veya numarasini yanlis girdigimiz kisileri duzeltiriz
