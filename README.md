@@ -8,3 +8,8 @@ bu görsel 2. projedir
 3-) kisi listeleye basinca butun kayitlari gostrir
 
 4-) kisi duzeltte adini veya numarasini yanlis girdigimiz kisileri duzeltiriz
+
+                      <img width="157" height="38" alt="image" src="https://github.com/user-attachments/assets/e612ab9f-54cb-4829-b438-b5c3992646e7" />
+                      <img width="161" height="30" alt="image" src="https://github.com/user-attachments/assets/7d00d51b-8108-452c-a5fc-2ba14d2267e7" />
+#Örnekler
+bunlar rehber ve pokemonların dosyaya kayıt oluş şeklidir
