@@ -131,4 +131,4 @@ while True:
         pokemon_duzelt()
     else:
         break
-
+ 
